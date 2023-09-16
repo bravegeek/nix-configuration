@@ -7,12 +7,6 @@
     isNormalUser = true;
     description = "Greg";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-      kate
-      vscode
-      discord
-      git
-    ];
+    packages = with pkgs; [ ];
   };
 }
