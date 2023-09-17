@@ -34,8 +34,8 @@ in
 
       # Shell
       # alacritty
-      # zsh
-      # zsh-powerlevel10k
+      zsh
+      zsh-powerlevel10k
       # tmux
       # nushell
 
@@ -75,24 +75,12 @@ in
 
     ];
 
-  programs.git = {
-    enable = true;
-    userName = "Greg Read";
-    userEmail = "gregread@gmail.com";
-  };
-
-  programs.vscode = {
-    enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      dracula-theme.theme-dracula
-      jnoortheen.nix-ide
-      vscode-icons-team.vscode-icons
-      esbenp.prettier-vscode
-      eamodio.gitlens
-      # vscodevim.vim
-      # yzhang.markdown-all-in-one
+    # configure the packages
+    imports = [ 
+      ./git.nix 
+      ./vscode.nix 
     ];
-  };
+
 
     fonts.fontconfig.enable = true;
 
