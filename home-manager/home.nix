@@ -13,6 +13,7 @@ in
 
   home-manager.users.greg = {
 
+    nixpkgs.config.allowUnfree = true;
     # Packages that should be installed to the user profile.
     home.packages = with pkgs; [
       # Browsing and Communication
@@ -78,6 +79,19 @@ in
     enable = true;
     userName = "Greg Read";
     userEmail = "gregread@gmail.com";
+  };
+
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      dracula-theme.theme-dracula
+      jnoortheen.nix-ide
+      vscode-icons-team.vscode-icons
+      esbenp.prettier-vscode
+      eamodio.gitlens
+      # vscodevim.vim
+      # yzhang.markdown-all-in-one
+    ];
   };
 
     fonts.fontconfig.enable = true;
