@@ -35,7 +35,8 @@ in
       # Shell
       # alacritty
       zsh
-      zsh-powerlevel10k
+      oh-my-zsh
+      # zsh-powerlevel10k
       # tmux
       # nushell
 
@@ -49,7 +50,7 @@ in
       unzip
       # gnome.file-roller
       # bat
-      # thefuck
+      thefuck
       exa
 
       # Dependencies
@@ -79,6 +80,7 @@ in
     imports = [ 
       ./git.nix 
       ./vscode.nix 
+      ./zsh.nix
     ];
 
 
