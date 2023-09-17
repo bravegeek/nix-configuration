@@ -36,7 +36,7 @@ in
       # alacritty
       zsh
       oh-my-zsh
-      # zsh-powerlevel10k
+      zsh-powerlevel10k
       # tmux
       # nushell
 
