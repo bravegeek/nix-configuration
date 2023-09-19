@@ -7,6 +7,9 @@
     enable = true;
     layout = "us";
     xkbVariant = "";
+    
+    # Enable touchpad support (enabled default in most desktopManager).
+    # libinput.enable = true;
 
     desktopManager = {
       plasma5.enable = true;

@@ -33,7 +33,7 @@ in
       # dotnet-sdk_7
 
       # Shell
-      # alacritty
+      alacritty
       zsh
       oh-my-zsh
       zsh-powerlevel10k
@@ -81,6 +81,7 @@ in
       ./git.nix 
       ./vscode.nix 
       ./zsh.nix
+      ./alacritty.nix
     ];
 
 

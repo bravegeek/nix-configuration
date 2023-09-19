@@ -12,6 +12,7 @@
       ./users.nix
       ./fonts.nix
       ./x11.nix
+      ./xrdp.nix
       ./network.nix
       ./sound.nix
       ./home-manager/home.nix
@@ -49,9 +50,13 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    
+
     # home-manager
   ];
+
+  # add zsh to /etc/shells and enable it for users
+  environment.shells= with  pkgs; [ zsh ];
+  programs.zsh.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
