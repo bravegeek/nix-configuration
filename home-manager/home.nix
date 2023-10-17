@@ -28,9 +28,9 @@ in
       git
       vscode
       # gcc
-      # nodejs
+      nodejs
       # coursier
-      # dotnet-sdk_7
+      dotnet-sdk_8
 
       # Shell
       alacritty
@@ -82,7 +82,6 @@ in
       ./vscode.nix 
       ./zsh.nix
       ./alacritty.nix
-      ./dotnet.nix
     ];
 
 
