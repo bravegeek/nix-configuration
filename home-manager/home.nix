@@ -82,6 +82,7 @@ in
       ./vscode.nix 
       ./zsh.nix
       ./alacritty.nix
+      ./dotnet.nix
     ];
 
 
