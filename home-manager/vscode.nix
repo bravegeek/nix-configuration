@@ -10,7 +10,7 @@
       jnoortheen.nix-ide
       vscode-icons-team.vscode-icons
       esbenp.prettier-vscode
-      eamodio.gitlens
+      # eamodio.gitlens
       # vscodevim.vim
       # yzhang.markdown-all-in-one
     ];
