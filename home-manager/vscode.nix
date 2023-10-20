@@ -10,6 +10,8 @@
       jnoortheen.nix-ide
       vscode-icons-team.vscode-icons
       esbenp.prettier-vscode
+      ms-dotnettools.csharp
+      ionide.ionide-fsharp
       # eamodio.gitlens
       # vscodevim.vim
       # yzhang.markdown-all-in-one
