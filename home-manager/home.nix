@@ -30,7 +30,8 @@ in
       # gcc
       nodejs
       # coursier
-      dotnet-sdk_8
+      dotnet-sdk_7
+      # dotnet-sdk_8
 
       # Shell
       alacritty
